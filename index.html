@@ -60,7 +60,10 @@ authorization of the copyright holder.
 .stage.zoom{overflow:auto;display:block}.stage.zoom .art-holder{display:block;max-width:none;max-height:none;filter:none;width:max-content}.stage.zoom .art-holder canvas,.stage.zoom .art-holder img{max-width:none;max-height:none}.stage.zoom .canvas-badge{display:none}
 
 button,input,select,textarea{-webkit-tap-highlight-color:transparent}input[type=file],select,textarea{font-size:16px}.text-result textarea{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default;font-size:16px}.action{min-height:42px}.toast{bottom:max(22px,env(safe-area-inset-bottom));line-height:1.7}body{padding-bottom:env(safe-area-inset-bottom)}
-.mode-switch{display:flex;gap:5px;background:#f1edf6;padding:4px;border-radius:10px;margin-bottom:12px}.mode-switch button{flex:1;border-radius:7px;padding:10px 5px;background:transparent;color:#87768f;font-size:12px}.mode-switch button.active{background:white;color:#6b4e9b;box-shadow:0 1px 4px #0001}.unique-note{font-size:11px;color:#706185;margin:0 0 20px}.estimate{white-space:pre-line;border:1px solid #dfd5ed;background:#f8f4fd;padding:12px;border-radius:9px;color:#6e5887;font-size:11px;line-height:1.9;margin-top:16px;font-variant-numeric:tabular-nums}.estimate-error{background:#fff0ee;border-color:#eabdb8;color:#a14c43}.media-info{font-size:11px;line-height:1.8;white-space:pre-line;color:#8b7f95;display:block;overflow-wrap:anywhere;margin:10px 0 14px}.art-holder video{max-width:100%;max-height:440px;display:block}.pdf-output{margin-top:15px;padding:18px}.pdf-output h2{font-size:13px;margin:0 0 10px}.pdf-output p{font-size:11px;line-height:1.8;color:#91839d}.pdf-item{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0;padding-bottom:12px;border-bottom:1px solid #eee8f2;overflow-wrap:anywhere}.pdf-item strong{width:100%;font-size:11px;line-height:1.8}</style>
+.mode-switch{display:flex;gap:5px;background:#f1edf6;padding:4px;border-radius:10px;margin-bottom:12px}.mode-switch button{flex:1;border-radius:7px;padding:10px 5px;background:transparent;color:#87768f;font-size:12px}.mode-switch button.active{background:white;color:#6b4e9b;box-shadow:0 1px 4px #0001}.unique-note{font-size:11px;color:#706185;margin:0 0 20px}.estimate{white-space:pre-line;border:1px solid #dfd5ed;background:#f8f4fd;padding:12px;border-radius:9px;color:#6e5887;font-size:11px;line-height:1.9;margin-top:16px;font-variant-numeric:tabular-nums}.estimate-error{background:#fff0ee;border-color:#eabdb8;color:#a14c43}.media-info{font-size:11px;line-height:1.8;white-space:pre-line;color:#8b7f95;display:block;overflow-wrap:anywhere;margin:10px 0 14px}.art-holder video{max-width:100%;max-height:440px;display:block}.pdf-output{margin-top:15px;padding:18px}.pdf-output h2{font-size:13px;margin:0 0 10px}.pdf-output p{font-size:11px;line-height:1.8;color:#91839d}.pdf-item{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0;padding-bottom:12px;border-bottom:1px solid #eee8f2;overflow-wrap:anywhere}.pdf-item strong{width:100%;font-size:11px;line-height:1.8}.copy-panel{margin-top:16px;padding:18px}.copy-panel h2{font-size:13px;margin:0 0 14px}.copy-panel label,.copy-panel p,.copy-panel summary{font-size:11px;line-height:1.9;color:#82718e}.copy-panel label{display:block;margin-bottom:8px}.copy-panel details{margin-top:14px}.copy-panel summary{cursor:pointer}.copy-preview{overflow:auto;max-height:360px;margin-top:12px;border:1px solid #eee7f3}.copy-preview table{box-sizing:border-box}.copy-preview td{box-sizing:border-box}
+.art-codeblock{margin:14px 0;border:1px solid #353844;border-radius:12px;overflow:hidden;background:#17191f;color:#edf0f6}.art-codebar{display:flex;align-items:center;justify-content:space-between;background:#252830;padding:9px 14px;font-size:11px;color:#bfc5d1}.art-codebar button{padding:6px 10px;border-radius:6px;background:#353a45;color:#eef2fa;font-size:11px;min-height:32px}.art-codepre{overflow:auto;max-height:420px;margin:0;padding:16px;white-space:pre;overflow-wrap:normal;word-break:normal;direction:ltr;unicode-bidi:bidi-override;font-variant-ligatures:none;font-kerning:none;letter-spacing:0;line-height:1.2;-webkit-user-select:text;user-select:text}.art-codepre code{font-family:"Cascadia Mono","SFMono-Regular",Menlo,Consolas,"ＭＳ ゴシック","MS Gothic",monospace;white-space:pre;line-height:1.2;letter-spacing:0}
+.copy-size-status{font-size:12px;color:#81718f;background:#f4effa;padding:10px 12px;border-radius:8px;margin:10px 0}.copy-size-status output{font-variant-numeric:tabular-nums}
+</style>
 </head>
 <body>
 <div id="runtimeNotice" style="margin:16px;padding:16px;border:1px solid #cfc0e6;border-radius:12px;background:#f4effb;font:14px/1.8 -apple-system,sans-serif;color:#534466">この画面でボタンが動かない場合は、JavaScriptを実行できないプレビューで開かれています。ファイルを保存し、JavaScript対応のHTML実行アプリで開いてください。HTMLだけでこの制限を解除することはできません。</div>
@@ -93,10 +96,10 @@ button,input,select,textarea{-webkit-tap-highlight-color:transparent}input[type=
     <div class="preview-toolbar"><span class="preview-title"><i class="live-dot"></i>プレビュー <label style="font-size:10px;margin-left:8px;font-weight:400"><input id="zoom" type="checkbox" style="accent-color:#7861b8;vertical-align:middle"> 原寸</label></span><div class="tabs" role="group" aria-label="表示の切り替え"><button id="resultTab" class="tab active" type="button" aria-pressed="true">文字アート</button><button id="originalTab" class="tab" type="button" aria-pressed="false">元の画像</button></div></div>
     <div class="stage" id="stage"><div class="art-holder"><canvas id="result" role="img" aria-label="画像を文字だけで再現した文字アート"></canvas><img id="original" class="hidden" alt="選択した元の画像"><video id="videoOriginal" class="hidden" controls playsinline muted preload="metadata" aria-label="選択した元の動画"></video></div><span class="canvas-badge" id="canvasBadge">すべて、文字でできています。</span><div class="processing hidden" id="processing" role="status"><div class="spinner"></div><span id="progressText">文字の色を調べています…</span><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><button class="sample" style="width:auto" id="cancel" type="button">中止する</button></div></div>
     <div class="stats"><span>サイズ <b id="sizeStat">—</b></span><span>使用文字数 <b id="totalStat">—</b></span><span>文字の種類 <b id="uniqueStat">—</b></span></div>
-    <div class="actions"><span class="result-note" id="resultNote">コピーは文字幅を補正。固定配置はHTML保存。</span><div class="action-group"><button class="action" id="copy" type="button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4"/></svg>文字をコピー</button><button class="action" id="saveText" type="button" disabled>TXT保存</button><button class="action" id="saveHtml" type="button" disabled>配置を保つHTML保存</button><button class="action primary" id="savePng" type="button" disabled>↓ PNG保存</button></div></div>
+    <div class="actions"><span class="result-note" id="resultNote">コピーするときに等幅の文字列を作成します。</span><div class="action-group"><button class="action" id="copy" type="button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4"/></svg>文字をコピー</button><button class="action" id="saveText" type="button" disabled>TXT保存</button><button class="action" id="saveHtml" type="button" disabled>配置を保つHTML保存</button><button class="action primary" id="savePng" type="button" disabled>↓ PNG保存</button></div></div>
    </div>
-   <div class="under-preview"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M10 9v5m0-8v1"/></svg><span>色付き絵文字と漢字・記号の形で再現します。候補は158,592種類で、表示できる種類は端末のフォントによります。文字を貼り付けるときは、貼り付け先の等幅フォントと折り返し設定も確認してください。絵文字は貼り付け先でも幅が異なるため、配置を固定するなら「配置を保つHTML保存」を使えます。</span></div>
-   <section id="pdfOutput" class="panel pdf-output"><h2>動画PDFの保存一覧</h2><p>PDFは静止ページです。元動画の1フレームを1ページとして保存します。</p><button class="sample" id="releasePDFs" type="button">保存済みPDFの画面内データを解放</button><div id="pdfFiles"></div><button id="resumePDF" class="convert hidden" type="button">保存したので続きを作る</button></section><details class="text-result"><summary>テキストとして見る・選択する</summary><textarea id="textResult" readonly aria-label="コピーできる文字アート" spellcheck="false" wrap="off"></textarea></details>
+   <div class="under-preview"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M10 9v5m0-8v1"/></svg><span>色付き絵文字と漢字・記号の形で再現します。候補は158,592種類で、表示できる種類は端末のフォントによります。「文字をコピー」を使います。コピー先でも等幅フォントを使ってください。絵文字は環境により幅が変わるため、完全に配置を固定する場合はHTML保存を利用できます。</span></div>
+   <div id="copyPanel" hidden aria-hidden="true"><output id="copyFontSize"></output><button id="copyAgain" type="button" disabled tabindex="-1">コピー</button><pre><code id="copyLayoutPreview"></code></pre><div id="copyStatus" role="status"></div><button id="saveCopyHtml" type="button" disabled tabindex="-1"></button></div><section id="pdfOutput" class="panel pdf-output"><h2>動画PDFの保存一覧</h2><p>PDFは静止ページです。元動画の1フレームを1ページとして保存します。</p><button class="sample" id="releasePDFs" type="button">保存済みPDFの画面内データを解放</button><div id="pdfFiles"></div><button id="resumePDF" class="convert hidden" type="button">保存したので続きを作る</button></section><textarea id="textResult" readonly hidden aria-hidden="true" tabindex="-1" spellcheck="false" wrap="off"></textarea>
   </section>
  </div>
  <footer><span class="footer-tag">MADE OF CHARACTERS. FULL OF COLOR.</span><span class="palette-strip" aria-hidden="true">🟪 🟧 🟨 🟩 🟦</span><span>画像の送信・登録は不要 · <a href="https://www.unicode.org/license.txt" target="_blank" rel="noopener">Unicode 17.0</a> · <a href="https://github.com/Vanilagy/mediabunny/tree/v1.66.0" target="_blank" rel="noopener">Mediabunny 1.66.0 / MPL-2.0</a></span></footer>
@@ -647,52 +650,91 @@ async function download(blob,name){
 }
 
 function escapeHtml(text){return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-function columnCell(char){
- // Punctuation and mathematical alphabets can otherwise silently change row width.
- // Use the actual advance in the recommended monospace font for ambiguous glyphs.
- if(COPY_WIDTHS.has(char))return COPY_WIDTHS.get(char);
- let result=char;
- if(NARROW_CHARS.has(char)){
-  if(!copyMeasure){copyMeasure=document.createElement('canvas').getContext('2d');copyMeasure.font='16px '+COPY_FONT;}
-  const unit=copyMeasure.measureText(' ').width||8,advance=copyMeasure.measureText(char).width;
-  if(advance<unit*1.5)result+=' ';
+// Text-only code-block layout, prepared on demand from the selected frame.
+let preparedCopy=null,copyPreparing=false;
+const CODE_FONT=FONT;
+function codeAppearance(snapshot=activeResult){
+ if(!snapshot)return {fontPx:16,key:'16.0000'};
+ let cell=snapshot.previewCellPx||0;
+ if(snapshot===activeResult){const rect=$('result').getBoundingClientRect();if(rect.width>0&&rect.height>0)cell=rect.width/snapshot.cols;}
+ if(!cell)cell=snapshot.canvas.width/snapshot.cols;
+ snapshot.previewCellPx=cell;
+ const fontPx=cell*1.18;return {fontPx,key:fontPx.toFixed(4)};
+}
+function syncCodeblockSize(){
+ if(!activeResult)return;
+ const appearance=codeAppearance();
+ $('copyLayoutPreview').style.fontFamily=CODE_FONT;$('copyLayoutPreview').style.fontSize=appearance.fontPx+'px';const codePre=$('copyLayoutPreview').parentElement;if(codePre&&codePre.tagName==='PRE'){codePre.style.fontFamily=CODE_FONT;codePre.style.fontSize=appearance.fontPx+'px';}
+ $('copyFontSize').textContent=appearance.fontPx.toFixed(2)+' px（プレビュー連動）';
+ if(preparedCopy&&preparedCopy.snapshot===activeResult&&preparedCopy.appearanceKey!==appearance.key){preparedCopy=null;$('saveCopyHtml').disabled=true;$('copyStatus').textContent='プレビューの文字サイズに合わせました。次にコピーするときに空白を調整し直します。';}
+}
+function rawCellText(cells){return cells.map(row=>row.join('')).join('\r\n');}
+function alignedPlainText(cells){return rawCellText(cells);}
+function clipboardFormats(text,fontPx=16){
+ const content=escapeHtml(text).replace(/ /g,'&nbsp;');
+ const style='margin:0;padding:12px;white-space:pre;overflow-wrap:normal;word-break:normal;direction:ltr;unicode-bidi:bidi-override;font-family:'+escapeHtml(CODE_FONT)+';font-size:'+fontPx.toFixed(4)+'px;line-height:1.2;font-weight:normal;font-style:normal;letter-spacing:0;font-kerning:none;font-variant-ligatures:none;background:#17191f;color:#edf0f6;';
+ const fragment='<pre dir="ltr" style="'+style+'"><code style="white-space:pre;font:inherit;letter-spacing:0">'+content+'</code></pre>';
+ return {plain:text,fragment,html:'<!doctype html><html><head><meta charset="utf-8"></head><body><!--StartFragment-->'+fragment+'<!--EndFragment--></body></html>'};
+}
+async function createCopyLayout(snapshot){
+ const appearance=codeAppearance(snapshot),fontPx=appearance.fontPx,measure=document.createElement('canvas').getContext('2d'),chars=new Set(snapshot.cells.flat());
+ measure.font=fontPx+'px '+CODE_FONT;if('fontKerning' in measure)measure.fontKerning='none';
+ const unit=measure.measureText(' ').width||fontPx*.6,metrics=new Map();let widest=unit*2,spaces;
+ for(const char of chars){const width=measure.measureText(char).width;metrics.set(char,width);widest=Math.max(widest,width);}
+ const cellWidth=Math.ceil((widest-.0001)/unit)*unit;
+ const seenWidths=new Set();spaces=[];
+ for(const char of [' ','\u2009','\u200A','\u2006','\u2005','\u3000']){const width=measure.measureText(char).width,key=width.toFixed(4);if(width>.01&&!seenWidths.has(key)){seenWidths.add(key);spaces.push({char,width});}}
+ spaces.sort((a,b)=>b.width-a.width);
+ const lines=[];
+ for(let y=0;y<snapshot.rows;y++){
+  let line='',position=0;
+  for(let x=0;x<snapshot.cols;x++){
+   const char=snapshot.cells[y][x];line+=char;position+=metrics.get(char);
+   const target=(x+1)*cellWidth;
+   for(const space of spaces){const count=Math.max(0,Math.floor((target-position+.0001)/space.width));if(count){line+=space.char.repeat(count);position+=count*space.width;}}
+   // Carry subpixel rounding forward, instead of letting it accumulate across a row.
+   const smallest=spaces[spaces.length-1];if(smallest&&target-position>smallest.width/2){line+=smallest.char;position+=smallest.width;}
+  }
+  lines.push(line);
+  if(y%12===0){$('copyStatus').textContent='空白と改行をそろえています… '+Math.round((y+1)/snapshot.rows*100)+'%';await delay();}
  }
- COPY_WIDTHS.set(char,result);return result;
-}
-function alignedPlainText(cells){return cells.map(row=>row.map(columnCell).join('')).join('\r\n');}
-function gridMarkup(cells){
- const size=24,font=escapeHtml(FONT),fg=activeResult&&activeResult.bg==='#ffffff'?'#111':'#fff';
- const bg=activeResult?activeResult.bg:'#fff';
- // Table cells keep independent advances, so mixed fonts cannot move later columns.
- let html='<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;border-collapse:collapse;border-spacing:0;width:'+cells[0].length*size+'px;background:'+bg+';color:'+fg+';margin:0;padding:0"><colgroup>';
- html+='<col style="width:'+size+'px">'.repeat(cells[0].length)+'</colgroup><tbody>';
- const cellStyle='width:'+size+'px;min-width:'+size+'px;max-width:'+size+'px;height:'+size+'px;min-height:'+size+'px;padding:0;border:0;vertical-align:middle;text-align:center;overflow:hidden;';
- for(const row of cells){html+='<tr style="height:'+size+'px;line-height:0">';for(const char of row)html+='<td style="'+cellStyle+'"><span style="display:block;box-sizing:border-box;width:'+size+'px;height:'+size+'px;overflow:hidden;white-space:nowrap;font-family:'+font+';font-size:28.32px;font-weight:400;font-style:normal;line-height:'+size+'px;text-align:center;letter-spacing:0">'+escapeHtml(char).replace(/ /g,'&nbsp;')+'</span></td>';html+='</tr>';}
- return html+'</tbody></table>';
-}
-function clipboardFormats(text,useGrid=false){
- const escaped=escapeHtml(text).replace(/ /g,'&nbsp;').replace(/\t/g,'&#9;');
- return {plain:text,html:useGrid&&activeResult?gridMarkup(activeResult.cells):'<pre style="white-space:pre;tab-size:4;font-family:'+escapeHtml(COPY_FONT)+';font-size:14px;line-height:1;margin:0">'+escaped+'</pre>'};
+ const text=lines.join('\r\n');return {...clipboardFormats(text,fontPx),snapshot,width:snapshot.cols*cellWidth,fontPx,appearanceKey:appearance.key};
 }
 function copyWithSelection(formats){
- const t=document.createElement('textarea');t.value=formats.plain;t.setAttribute('aria-hidden','true');t.style.cssText='position:fixed;left:-9999px;top:0;white-space:pre';document.body.appendChild(t);
- const onCopy=e=>{if(!e.clipboardData)return;e.clipboardData.setData('text/plain',formats.plain);e.clipboardData.setData('text/html',formats.html);e.preventDefault();};document.addEventListener('copy',onCopy,true);
- try{t.focus();t.select();t.setSelectionRange(0,t.value.length);return document.execCommand('copy');}finally{document.removeEventListener('copy',onCopy,true);t.remove();}
+ const holder=document.createElement('div');holder.contentEditable='true';holder.textContent='文字アート';holder.style.cssText='position:fixed;left:0;top:0;width:1px;height:1px;opacity:.01;overflow:hidden;white-space:pre;';document.body.appendChild(holder);
+ const selection=window.getSelection(),range=document.createRange();range.selectNodeContents(holder);selection.removeAllRanges();selection.addRange(range);let handled=false;
+ const onCopy=e=>{if(!e.clipboardData)return;e.clipboardData.setData('text/plain',formats.plain);e.clipboardData.setData('text/html',formats.html);e.preventDefault();handled=true;};document.addEventListener('copy',onCopy,true);
+ try{holder.focus();selection.removeAllRanges();selection.addRange(range);return document.execCommand('copy')&&handled;}finally{document.removeEventListener('copy',onCopy,true);selection.removeAllRanges();holder.remove();}
+}
+function exposePreparedCopy(payload){
+ preparedCopy=payload;$('copyAgain').disabled=false;$('saveCopyHtml').disabled=false;
+ const preview=$('copyLayoutPreview');preview.textContent=payload.plain;preview.style.fontFamily=CODE_FONT;preview.style.fontSize=payload.fontPx+'px';
+ $('textResult').value=payload.plain;syncCodeblockSize();$('copyStatus').textContent='コピー用テキストを作成しました。空白・改行を含めてコピーします。';
 }
 async function copy(){
- if(!resultText||!activeResult)return;
- // A million-cell HTML clipboard would be too large; the exact HTML download remains available.
- const useGrid=activeResult.cols*activeResult.rows<=3000;
- const formats=clipboardFormats(resultText,useGrid);let copied=false;
- if(window.isSecureContext&&navigator.clipboard&&navigator.clipboard.write&&typeof ClipboardItem!=='undefined'){
-  try{await navigator.clipboard.write([new ClipboardItem({'text/plain':new Blob([formats.plain],{type:'text/plain'}),'text/html':new Blob([formats.html],{type:'text/html'})})]);copied=true;}catch{}
- }
- if(!copied){try{copied=copyWithSelection(formats);}catch{}}
- if(!copied&&window.isSecureContext&&navigator.clipboard&&navigator.clipboard.writeText){try{await navigator.clipboard.writeText(formats.plain);copied=true;}catch{}}
- if(copied){notify('幅を補正してコピーしました。配置を保つにはHTML保存を使ってください。');return;}
- document.querySelector('details').open=true;$('textResult').focus();$('textResult').select();notify('下のテキストを選択しました。長押しして「コピー」を選んでください。');
+ if(!activeResult||copyPreparing)return;
+ const snapshot=activeResult,appearance=codeAppearance(snapshot),cached=preparedCopy&&preparedCopy.snapshot===snapshot&&preparedCopy.appearanceKey===appearance.key?preparedCopy:null;
+ copyPreparing=true;$('copy').disabled=true;$('copyAgain').disabled=true;$('copyStatus').textContent='コピー用テキストを作成しています…';
+ const preparation=cached?Promise.resolve(cached):createCopyLayout(snapshot);let copied=false;
+ try{
+  if(window.isSecureContext&&navigator.clipboard&&navigator.clipboard.write&&typeof ClipboardItem!=='undefined'){
+   try{const item=new ClipboardItem({'text/plain':preparation.then(p=>new Blob([p.plain],{type:'text/plain'})),'text/html':preparation.then(p=>new Blob([p.html],{type:'text/html'}))});await navigator.clipboard.write([item]);copied=true;}catch{}
+  }
+  const payload=await preparation;exposePreparedCopy(payload);
+  if(!copied){try{copied=copyWithSelection(payload);}catch{}}
+  if(copied){$('copyAgain').textContent='コピーしました';$('copyStatus').textContent='空白・改行を保ってコピーしました。貼り付け先も等幅フォントで表示してください。';notify('コピーしました。');setTimeout(()=>{$('copyAgain').textContent='コピー';},2500);}
+  else{$('copyAgain').textContent='もう一度コピー';$('copyStatus').textContent='テキストは作成済みです。「文字をコピー」をもう一度押してください。';}
+ }catch(e){$('copyStatus').textContent='コピー用テキストを作成できませんでした。横の文字数を減らしてお試しください。';}
+ finally{copyPreparing=false;$('copy').disabled=!activeResult;$('copyAgain').disabled=!activeResult;}
 }
-$('textResult').addEventListener('copy',e=>{if(!e.clipboardData)return;const t=e.currentTarget,formats=clipboardFormats(t.value.substring(t.selectionStart,t.selectionEnd));e.clipboardData.setData('text/plain',formats.plain);e.clipboardData.setData('text/html',formats.html);e.preventDefault();});
+$('copyAgain').addEventListener('click',copy);
+$('saveCopyHtml').addEventListener('click',()=>{if(preparedCopy)download(new Blob([preparedCopy.html],{type:'text/html;charset=utf-8'}),lastName+'-codeblock.html');});
+$('textResult').addEventListener('copy',e=>{if(!e.clipboardData)return;const t=e.currentTarget,formats=clipboardFormats(t.value.substring(t.selectionStart,t.selectionEnd),preparedCopy?preparedCopy.fontPx:16);e.clipboardData.setData('text/plain',formats.plain);e.clipboardData.setData('text/html',formats.html);e.preventDefault();});
+$('copyLayoutPreview').addEventListener('copy',e=>{if(!e.clipboardData)return;const text=window.getSelection().toString(),formats=clipboardFormats(text,preparedCopy?preparedCopy.fontPx:16);e.clipboardData.setData('text/plain',formats.plain);e.clipboardData.setData('text/html',formats.html);e.preventDefault();});
+
+window.addEventListener('resize',syncCodeblockSize,{passive:true});
+if(typeof ResizeObserver!=='undefined'){const codeSizeObserver=new ResizeObserver(syncCodeblockSize);codeSizeObserver.observe($('result'));}
+
 function saveGridHtml(){
  if(!activeResult)return;
  const title=escapeHtml(lastName+' — 文字アート'),size=24,font=FONT;
@@ -807,11 +849,11 @@ async function renderColorFrame(frameSource,palette,layout,onProgress){
  return {canvas,cols,rows,cells,used:total,uniqueCount:distinct.size,bg:bgColor()};
 }
 function commitFrame(result,label){
- const old=activeResult;activeResult=result;resultText=alignedPlainText(result.cells);$('textResult').value=resultText;
+ const old=activeResult;activeResult=result;resultText=rawCellText(result.cells);$('textResult').value=resultText;preparedCopy=null;$('copyAgain').disabled=false;$('saveCopyHtml').disabled=true;$('copyLayoutPreview').textContent='「コピー」を押すと、空白と改行をそろえた文字列をここに作ります。';
  const c=$('result');c.width=result.canvas.width;c.height=result.canvas.height;c.getContext('2d').drawImage(result.canvas,0,0);
  if(old&&old.canvas!==result.canvas)old.canvas.width=old.canvas.height=0;
  $('sizeStat').textContent=result.cols+' × '+result.rows+' 文字';$('totalStat').textContent=result.used.toLocaleString()+' 文字';$('uniqueStat').textContent=result.uniqueCount.toLocaleString()+' 種類';$('resultNote').textContent=label;
- for(const id of ['copy','saveText','savePng','saveHtml'])$(id).disabled=false;showTab(false);
+ for(const id of ['copy','saveText','savePng','saveHtml'])$(id).disabled=false;showTab(false);syncCodeblockSize();
 }
 async function convert(){
  if(busy)return;if(mediaMode==='video'){await convertVideoPDF();return;}if(!source)return;
