@@ -792,7 +792,7 @@ function setBusy(on){
 function showTab(original){
  const isVideo=mediaMode==='video';$('original').classList.toggle('hidden',!original||isVideo);$('videoOriginal').classList.toggle('hidden',!original||!isVideo);$('result').classList.toggle('hidden',original);
  $('originalTab').classList.toggle('active',original);$('resultTab').classList.toggle('active',!original);$('originalTab').setAttribute('aria-pressed',String(original));$('resultTab').setAttribute('aria-pressed',String(!original));
- $('canvasBadge').textContent=original?'元の'+(isVideo?'動画':'画像'):'色の近さを優先・同じ文字は再使用できます';
+ $('canvasBadge').textContent=original?'元の'+(isVideo?'動画':'画像'):'';$('canvasBadge').classList.toggle('hidden',!original);
 }
 function selectMode(mode){if(busy)return;mediaMode=mode;
  $('modePhoto').classList.toggle('active',mode==='photo');$('modeVideo').classList.toggle('active',mode==='video');$('modePhoto').setAttribute('aria-pressed',String(mode==='photo'));$('modeVideo').setAttribute('aria-pressed',String(mode==='video'));
